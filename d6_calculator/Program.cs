@@ -5,7 +5,10 @@ class Program
 {
     static void Main()
     {
-        var line = Console.ReadLine();
-        Console.WriteLine("XXXXXX");
+        var line = Console.ReadLine().Trim().Split('+');
+        var a = line[0];
+        var b = line[1];
+        var ans = a + b;
+        Console.WriteLine(ans);
     }
 }
